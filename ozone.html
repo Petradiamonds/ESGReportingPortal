@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESG Reporting</title>
+
+    <!-- Chrome/android APP settings -->
+    <meta name="theme-color" content="#4287f5">
+    <link rel="icon" href="img/icon.png" sizes="192x192">
+    <!-- end of Chrome/Android App Settings  -->
+
+    <!-- Bootstrap // you can use hosted CDN here-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- end of bootstrap -->
+
+</head>
+
+<body class="bg-primary">
+    <!-- Page Start -->
+    <div class="pt-5 container bg-white rounded">
+        <nav class="navbar navbar-dark bg-dark rounded">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top bg-white rounded" alt="">
+                Ozone Inputs
+            </a>
+        </nav>
+        <hr>
+        <form>
+            <div class="form-group m-2">
+                <label class="m-0" for="Date">Date</label>
+                <input type="date" class="form-control" id="inputdate" placeholder="Date" required>
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="operation">Operation</label>
+                <select class="form-control" id="operation" required>
+                    <option value="CDM">Cullinan Diamond Mine</option>
+                    <option value="FDM">Finsch Diamond Mine</option>
+                    <option value="KDM">Koffiefontein Diamond Mine</option>
+                    <option value="WDL">Williamson Diamond Mine</option>
+                </select>
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="1_1_1_trichloroethane_TCA">1,1,1-trichloroethane (TCA)</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="1_1_1_trichloroethane_TCA"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="CarbonTetrachloride_CTC">Carbon Tetrachloride (CTC)
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="CarbonTetrachloride_CTC"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Halon">Halon
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Halon" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Methylbromide">Methyl bromide
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Methylbromide"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="R134a">R134 a
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="R134a" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="R410">R 410
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="R410" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Other_name_FDM_R507">Other:name (FDM R507)
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Other_name_FDM_R507"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="R404">R 404
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="R404" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="R22_Halocarbon_22_Chlorodifluoromethane">R-22 (Halocarbon 22;
+                    Chlorodifluoromethane)
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="R22_Halocarbon_22_Chlorodifluoromethane" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Attachment</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+            <br>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger btn-lg w-100"
+                        onclick="document.location.href='index.html'">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success btn-lg w-100" name="Save">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <br><br>
+    </div>
+    <!-- Page End -->
+
+    <!-- Start of Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- end of Bootstrap JS -->
+
+</body>
+
+</html>
