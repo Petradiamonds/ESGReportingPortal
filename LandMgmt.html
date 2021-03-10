@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESG Reporting</title>
+
+    <!-- Chrome/android APP settings -->
+    <meta name="theme-color" content="#4287f5">
+    <link rel="icon" href="img/icon.png" sizes="192x192">
+    <!-- end of Chrome/Android App Settings  -->
+
+    <!-- Bootstrap // you can use hosted CDN here-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- end of bootstrap -->
+
+</head>
+
+<body class="bg-primary">
+    <!-- Page Start -->
+    <div class="pt-5 container bg-white rounded">
+
+        <!-- NAV START -->
+        <nav class="navbar navbar-dark bg-dark rounded">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top bg-white rounded" alt="">
+                Land Management Inputs
+            </a>
+        </nav>
+        <!-- NAV END -->
+
+        <!-- Main Content Start-->
+
+        <!-- form start-->
+        <div class="card">
+            <div class="card-header bg-success">
+                New Record
+            </div>
+            <div class="card-body">
+                <form method="POST">
+
+                    <div class="form-row">
+                        <div class="form-group col-md-3">
+                            <label for="StartDate">Start Date</label>
+                            <input type="date" class="form-control" id="StartDate" name="StartDate" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="StartTime">Start Time</label>
+                            <input type="time" class="form-control" id="StartTime" name="StartTime" required>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="EquipmentType">Equipment Type</label>
+                            <select type="text" class="form-control" id="EquipmentType" name="EquipmentType"
+                                onchange="filterEquipment(this)" required>
+                                <option value="">Select Equipment Type </option>
+                            </select>
+                        </div>
+                        <div class="form-group col-md-3">
+                            <label for="Equipment">Equipment</label>
+                            <select type="text" class="form-control" id="Equipment" name="Equipment" required>
+                                <option value="">Select Equipment </option>
+
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="BreakdownDesc">Breakdown Description (Free Text)</label>
+                        <input type="text" class="form-control" id="BreakdownDesc" name="BreakdownDesc"
+                            placeholder="Type you comments here..." required>
+                    </div>
+
+                    <div class="row my-3">
+                        <div class="col-6">
+                            <button class="btn btn-outline-danger btn-lg form-control"
+                                onclick="document.location.href='index.html'">Cancel</button>
+                        </div>
+                        <div class="col-6">
+                            <button class="btn btn-outline-success btn-lg form-control" name="Save">Save</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- form end -->
+        <br><br>
+        <hr>
+        <h1>One Column From</h1>
+        <form>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputEmail4">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="inputPassword4">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputAddress">Address</label>
+                <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="form-group">
+                <label for="inputAddress2">Address 2</label>
+                <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="inputCity">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="inputState">State</label>
+                    <select id="inputState" class="form-control">
+                        <option selected>Choose...</option>
+                        <option>...</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="inputZip">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                        Check me out
+                    </label>
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger btn-lg form-control"
+                        onclick="document.location.href='index.html'">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success btn-lg form-control" name="Save">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <hr>
+        <h1>Two Column From</h1>
+        <form>
+            <div class="row">
+                <div class="col-6">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                            <label for="inputEmail4">Email</label>
+                            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+                        </div>
+                        <div class="form-group col-md-6">
+                            <label for="inputPassword4">Password</label>
+                            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress">Address</label>
+                        <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputAddress2">Address 2</label>
+                        <input type="text" class="form-control" id="inputAddress2"
+                            placeholder="Apartment, studio, or floor">
+                    </div>
+                </div>
+                <div class="col-6 border-left border-primary">
+                    <div class="form-group">
+                        <label for="inputCity">City</label>
+                        <input type="text" class="form-control" id="inputCity">
+                    </div>
+                    <div class="form-group">
+                        <label for="inputState">State</label>
+                        <select id="inputState" class="form-control">
+                            <option selected>Choose...</option>
+                            <option>...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="inputZip">Zip</label>
+                        <input type="text" class="form-control" id="inputZip">
+                    </div>
+                    <div class="form-group">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck">
+                                Check me out
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger btn-lg form-control"
+                        onclick="document.location.href='index.html'">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success btn-lg form-control" name="Save">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <!-- Main Content End-->
+
+
+    </div>
+    <!-- Page End -->
+
+    <!-- Start of Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- end of Bootstrap JS -->
+
+</body>
+
+</html>

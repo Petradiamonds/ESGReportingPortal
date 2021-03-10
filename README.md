@@ -1,5 +1,5 @@
 # Petra ESG Reporting Portal
-<img src="https://github.com/HermanRas/PetraESGReportingPortal/blob/master/img/Logo.jpg" alt="#PetraLogo">
+<img src="https://github.com/HermanRas/ESGReportingPortal/blob/main/img/Logo.jpg" alt="#PetraLogo">
 
 ## Issues Tracking
 ### Issues Tracking: Total Logged !
