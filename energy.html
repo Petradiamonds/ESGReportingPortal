@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESG Reporting</title>
+
+    <!-- Chrome/android APP settings -->
+    <meta name="theme-color" content="#4287f5">
+    <link rel="icon" href="img/icon.png" sizes="192x192">
+    <!-- end of Chrome/Android App Settings  -->
+
+    <!-- Bootstrap // you can use hosted CDN here-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- end of bootstrap -->
+
+</head>
+
+<body class="bg-primary">
+    <!-- Page Start -->
+    <div class="pt-5 container bg-white rounded">
+        <nav class="navbar navbar-dark bg-dark rounded">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top bg-white rounded" alt="">
+                Energy Inputs
+            </a>
+        </nav>
+        <hr>
+        <form>
+            <div class="form-group m-2">
+                <label class="m-0" for="Date">Date</label>
+                <input type="date" class="form-control" id="inputdate" placeholder="Date" required>
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="operation">Operation</label>
+                <select class="form-control" id="operation" required>
+                    <option value="CDM">Cullinan Diamond Mine</option>
+                    <option value="FDM">Finsch Diamond Mine</option>
+                    <option value="KDM">Koffiefontein Diamond Mine</option>
+                    <option value="WDL">Williamson Diamond Mine</option>
+                </select>
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="DieselVehicles">Diesel Vehicles</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="DieselVehicles"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="KPIvalueDieselforvehiclesTMMpertontreatedFY2019">KPI value:Diesel for vehicles
+                    (TMM) per ton treated FY 2019 -1%
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="KPIvalueDieselforvehiclesTMMpertontreatedFY2019" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0"
+                    for="IMPROVEMENTSTRATEGYimprovementreductionindieseluseforTracklessMobileMachinesmeasuredinl_t">IMPROVEMENT
+                    STRATEGY : 1% mprovement (reduction) in diesel use for Trackless Mobile Machines measured in l/t
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="IMPROVEMENTSTRATEGYimprovementreductionindieseluseforTracklessMobileMachinesmeasuredinl_t"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Dieselelectricitygeneration">Diesel electricity generation
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="Dieselelectricitygeneration" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Electricitygenerated">Electricity generated
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Electricitygenerated"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Electricitypurchased">Electricity purchased
+                    circuit
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Electricitypurchased"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Petrol">Petrol
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Petrol" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="LPG">LPG
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="LPG" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="KPIvalueElectricityusepertonnetreatedFY2019">KPI value: Electricity use per
+                    tonne treated FY 2019 - 1%
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="KPIvalueElectricityusepertonnetreatedFY2019" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0"
+                    for="IMPROVEMENTSTRATEGYYearonyearreductionintotalelectrcityusepertontreated">IMPROVEMENT STRATEGY:
+                    Year on year reduction in total electricity use per ton treated
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="IMPROVEMENTSTRATEGYYearonyearreductionintotalelectrcityusepertontreated" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Attachment</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+            </div>
+            <br>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger btn-lg w-100"
+                        onclick="document.location.href='index.html'">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success btn-lg w-100" name="Save">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <br><br>
+    </div>
+    <!-- Page End -->
+
+    <!-- Start of Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- end of Bootstrap JS -->
+
+</body>
+
+</html>

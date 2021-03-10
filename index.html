@@ -22,10 +22,10 @@
 
 <body class="bg-primary">
     <!-- Page Start -->
-    <div class="pt-5 container bg-white rounded">
+    <div class="pt-2 container bg-white rounded">
 
         <!-- NAV START -->
-        <nav class="navbar navbar-dark bg-dark rounded">
+        <nav class="mb-1 p-1 navbar navbar-dark bg-dark rounded">
             <a class="navbar-brand" href="index.html">
                 <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top  bg-white rounded"
                     alt="Logo">
@@ -38,14 +38,29 @@
             <div class="row bg-white">
                 <div class="col-12 bg-white text-center">
                     <div class="bg-dark p-1 my-1 rounded" style="margin: auto;">
-                        <img src="img/Logo.jpg" class="img-fluid rounded" style="max-height: 200px;" alt="Header">
+                        <img src="img/Header-1680x600_2.jpg" class="img-fluid rounded" alt="Header">
                     </div>
                 </div>
             </div>
 
             <!-- Top Menu Start -->
-            <div class="row my-3">
-                <div class="col-12 col-md-4 mb-1">
+            <div class="row my-1">
+                <div class="col-12 col-md-6">
+                    <div class="text-center d-flex flex-column justify-content-center text-light">
+                        <button class="btn btn-info btn-lg my-2" onclick="document.location.href='#'">Reports</button>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="text-center d-flex flex-column justify-content-center text-light">
+                        <button class="btn btn-info btn-lg my-2" onclick="document.location.href='#'">Dashboard</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Top Menu End -->
+
+            <!-- Bottom Menu Start -->
+            <div class="row my-1">
+                <div class="col-12 col-md-4 my-1">
                     <a class="form-control btn btn-success" data-toggle="collapse" href="#collapseEnv" role="button"
                         aria-expanded="false" aria-controls="collapseEnv">
                         ENVIRONMENT ▼
@@ -79,10 +94,9 @@
                         <button class="form-control btn btn-outline-primary btn-lg my-2"
                             onclick="document.location.href='#'">Travel
                             (Employee commute)</button>
-
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-1">
+                <div class="col-12 col-md-4 my-1">
                     <a class="form-control btn btn-success" data-toggle="collapse" href="#collapseSoc" role="button"
                         aria-expanded="false" aria-controls="collapseSoc">
                         SOCIAL ▼
@@ -92,7 +106,7 @@
                             onclick="document.location.href='#'">TBC</button>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 mb-1">
+                <div class="col-12 col-md-4 my-1">
                     <a class="form-control btn btn-success" data-toggle="collapse" href="#collapseGov" role="button"
                         aria-expanded="false" aria-controls="collapseGov">
                         GOVERNANCE ▼
@@ -103,22 +117,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Top Menu End -->
-
-            <!-- Bottom Menu Start -->
-            <div class="row my-3">
-                <div class="col-12 col-md-6">
-                    <div class="text-center d-flex flex-column justify-content-center text-light">
-                        <button class="btn btn-info btn-lg my-2" onclick="document.location.href='#'">Reports</button>
-                    </div>
-                </div>
-                <div class="col-12 col-md-6">
-                    <div class="text-center d-flex flex-column justify-content-center text-light">
-                        <button class="btn btn-info btn-lg my-2" onclick="document.location.href='#'">Dashboard</button>
-                    </div>
-                </div>
-            </div>
             <!-- Bottom Menu End -->
+
             <br><br>
         </section>
 
