@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ESG Reporting</title>
+
+    <!-- Chrome/android APP settings -->
+    <meta name="theme-color" content="#4287f5">
+    <link rel="icon" href="img/icon.png" sizes="192x192">
+    <!-- end of Chrome/Android App Settings  -->
+
+    <!-- Bootstrap // you can use hosted CDN here-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/app.css" rel="stylesheet">
+    <!-- end of bootstrap -->
+
+</head>
+
+<body class="bg-primary">
+    <!-- Page Start -->
+    <div class="pt-5 container bg-white rounded">
+        <nav class="navbar navbar-dark bg-dark rounded">
+            <a class="navbar-brand" href="index.php">
+                <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top bg-white rounded" alt="">
+                Waste Management Inputs
+            </a>
+        </nav>
+        <hr>
+        <form>
+            <div class="form-group m-2">
+                <label class="m-0" for="Date">Date</label>
+                <input type="date" class="form-control" id="inputdate" placeholder="Date" required>
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="operation">Operation</label>
+                <select class="form-control" id="operation" required>
+                    <option value="CDM">Cullinan Diamond Mine</option>
+                    <option value="FDM">Finsch Diamond Mine</option>
+                    <option value="KDM">Koffiefontein Diamond Mine</option>
+                    <option value="WDL">Williamson Diamond Mine</option>
+                </select>
+            </div>
+            <h6 class="bg-dark text-white p-2 rounded mt-3">Disposal</h6>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Areaofpits">Hazardous waste disposed</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Areaofpits"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Hazardouswastedisposed">Domestic waste disposed
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Hazardouswastedisposed"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="KPIvalueTotalwastetolandfillinFY2019">KPI value: Total waste to landfill in
+                    FY
+                    2019 -1%
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="KPIvalueTotalwastetolandfillinFY2019" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="IMPROVEMENTSTRATEGYYearonYear1_improvementonwastedisposedtolandfill">IMPROVEMENT
+                    STRATEGY: Year on Year 1% improvement on waste
+                    disposed to landfill
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="IMPROVEMENTSTRATEGYYearonYear1_improvementonwastedisposedtolandfill" placeholder="">
+            </div>
+            <h6 class="bg-dark text-white p-2 rounded mt-3">Recycling</h6>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Cardboard_paperrecycled">Cardboard/paper recycled
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Cardboard_paperrecycled"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Conveyorbeltingforrecycling">Conveyor belting for recycling
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control"
+                    id="Conveyorbeltingforrecycling" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="FluorescentTubes">Fluorescent Tubes
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="FluorescentTubes"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="E_waste">E-waste
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="E_waste" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Leadacidbatteries">Lead acid batteries
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Leadacidbatteries"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Plastic">Plastic
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Plastic" placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Scrapmetal">Scrap metal
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Scrapmetal"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Timber">Timber
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Timber" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Toner_inkcartridges">Toner / ink cartridges
+                </label>
+                <input type="" min="0" step=".01" value="0.00" class="form-control" id="Toner_inkcartridges"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Tyres">Tyres
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Tyres" placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Usedoil">Used oil
+                </label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Usedoil" placeholder="">
+            </div>
+            <h6 class="bg-dark text-white p-2 rounded mt-3">Incineration</h6>
+
+            <div class="form-group m-2">
+                <label class="m-0" for="Medicalwaste">Medical waste</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Medicalwaste"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Otherwaste">Other waste</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Otherwaste"
+                    placeholder="">
+            </div>
+            <h6 class="bg-dark text-white p-2 rounded mt-3">Mine Waste</h6>
+            <div class="form-group m-2">
+                <label class="m-0" for="fine_slimes_">Fine (slimes)</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="fine_slimes_"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="coarse_tailings">Coarse (tailings)</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="coarse_tailings"
+                    placeholder="">
+            </div>
+            <h6 class="bg-dark text-white p-2 rounded mt-3">Waste Cost</h6>
+            <div class="form-group m-2">
+                <label class="m-0" for="Hazardouswaste">Hazardous waste</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Hazardouswaste"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Domesticwaste">Domestic waste</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Domesticwaste"
+                    placeholder="">
+            </div>
+            <div class="form-group m-2">
+                <label class="m-0" for="Totalwastecosts">Total waste costs</label>
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Totalwastecosts"
+                    placeholder="">
+            </div>
+
+            <div class="form-group m-2">
+                <!-- *NEW FILE START* -->
+                <div class="mb-3">
+                    <label for="formFile" class="form-label">Attachment</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <!-- *NEW FILE END* -->
+            </div>
+            <br>
+            <div class="row my-3">
+                <div class="col-6">
+                    <button class="btn btn-outline-danger btn-lg w-100"
+                        onclick="document.location.href='index.html'">Cancel</button>
+                </div>
+                <div class="col-6">
+                    <button class="btn btn-outline-success btn-lg w-100" name="Save">Save</button>
+                </div>
+            </div>
+        </form>
+        <br><br>
+        <br><br>
+    </div>
+    <!-- Page End -->
+
+    <!-- Start of Bootstrap JS -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- end of Bootstrap JS -->
+
+</body>
+
+</html>
