@@ -33,11 +33,11 @@
         <form>
             <div class="form-group m-2">
                 <label class="m-0" for="Date">Date</label>
-                <input type="date" class="form-control" id="inputdate" name="" placeholder="Date" required>
+                <input type="date" class="form-control" id="inputdate" name="inputdate" placeholder="Date" required>
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="operation">Operation</label>
-                <select class="form-control" id="operation" required>
+                <select class="form-control" id="operation" name="operation" required>
                     <option value="CDM">Cullinan Diamond Mine</option>
                     <option value="FDM">Finsch Diamond Mine</option>
                     <option value="KDM">Koffiefontein Diamond Mine</option>
@@ -48,15 +48,15 @@
 
             <div class="form-group m-2">
                 <label class="m-0" for="Areaofpits">Hazardous waste disposed</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Areaofpits" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Areaofpits"
+                    name="Areaofpits" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Hazardouswastedisposed">Domestic waste disposed
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Hazardouswastedisposed"
-                    name="" placeholder="">
+                    name="Hazardouswastedisposed" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="KPIvalueTotalwastetolandfillinFY2019">KPI value: Total waste to landfill in
@@ -64,7 +64,8 @@
                     2019 -1%
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalueTotalwastetolandfillinFY2019" name="" placeholder="">
+                    id="KPIvalueTotalwastetolandfillinFY2019" name="KPIvalueTotalwastetolandfillinFY2019"
+                    placeholder="">
             </div>
 
             <div class="form-group m-2">
@@ -73,7 +74,8 @@
                     disposed to landfill
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="IMPROVEMENTSTRATEGYYearonYear1_improvementonwastedisposedtolandfill" name="" placeholder="">
+                    id="IMPROVEMENTSTRATEGYYearonYear1_improvementonwastedisposedtolandfill"
+                    name="IMPROVEMENTSTRATEGYYearonYear1_improvementonwastedisposedtolandfill" placeholder="">
             </div>
             <h6 class="bg-dark text-white p-2 rounded mt-3">Recycling</h6>
 
@@ -81,119 +83,119 @@
                 <label class="m-0" for="Cardboard_paperrecycled">Cardboard/paper recycled
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Cardboard_paperrecycled"
-                    name="" placeholder="">
+                    name="Cardboard_paperrecycled" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Conveyorbeltingforrecycling">Conveyor belting for recycling
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Conveyorbeltingforrecycling" name="" placeholder="">
+                    id="Conveyorbeltingforrecycling" name="Conveyorbeltingforrecycling" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="FluorescentTubes">Fluorescent Tubes
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="FluorescentTubes" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="FluorescentTubes"
+                    name="FluorescentTubes" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="E_waste">E-waste
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="E_waste" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="E_waste" name="E_waste"
                     placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Leadacidbatteries">Lead acid batteries
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Leadacidbatteries" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Leadacidbatteries"
+                    name="Leadacidbatteries" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Plastic">Plastic
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Plastic" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Plastic" name="Plastic"
                     placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Scrapmetal">Scrap metal
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Scrapmetal" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Scrapmetal"
+                    name="Scrapmetal" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Timber">Timber
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Timber" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Timber" name="Timber"
                     placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Toner_inkcartridges">Toner / ink cartridges
                 </label>
-                <input type="" min="0" step=".01" value="0.00" class="form-control" id="Toner_inkcartridges" name=""
-                    placeholder="">
+                <input type="" min="0" step=".01" value="0.00" class="form-control" id="Toner_inkcartridges"
+                    name="Toner_inkcartridges" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Tyres">Tyres
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Tyres" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Tyres" name="Tyres"
                     placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Usedoil">Used oil
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Usedoil" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Usedoil" name="Usedoil"
                     placeholder="">
             </div>
             <h6 class="bg-dark text-white p-2 rounded mt-3">Incineration</h6>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Medicalwaste">Medical waste</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Medicalwaste" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Medicalwaste"
+                    name="Medicalwaste" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Otherwaste">Other waste</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Otherwaste" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Otherwaste"
+                    name="Otherwaste" placeholder="">
             </div>
             <h6 class="bg-dark text-white p-2 rounded mt-3">Mine Waste</h6>
             <div class="form-group m-2">
                 <label class="m-0" for="fine_slimes_">Fine (slimes)</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="fine_slimes_" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="fine_slimes_"
+                    name="fine_slimes_" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="coarse_tailings">Coarse (tailings)</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="coarse_tailings" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="coarse_tailings"
+                    name="coarse_tailings" placeholder="">
             </div>
             <h6 class="bg-dark text-white p-2 rounded mt-3">Waste Cost</h6>
             <div class="form-group m-2">
                 <label class="m-0" for="Hazardouswaste">Hazardous waste</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Hazardouswaste" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Hazardouswaste"
+                    name="Hazardouswaste" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Domesticwaste">Domestic waste</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Domesticwaste" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Domesticwaste"
+                    name="Domesticwaste" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Totalwastecosts">Total waste costs</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Totalwastecosts" name=""
-                    placeholder="">
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Totalwastecosts"
+                    name="Totalwastecosts" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <!-- *NEW FILE START* -->
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Attachment</label>
-                    <input class="form-control" type="file" id="formFile" name="">
+                    <input class="form-control" type="file" id="formFile" name="formFile">
                 </div>
                 <!-- *NEW FILE END* -->
             </div>

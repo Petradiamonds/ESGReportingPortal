@@ -33,11 +33,11 @@
         <form>
             <div class="form-group m-2">
                 <label class="m-0" for="Date">Date</label>
-                <input type="date" class="form-control" id="inputdate" name="" placeholder="Date" required>
+                <input type="date" class="form-control" id="inputdate" name="inputdate" placeholder="Date" required>
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="operation">Operation</label>
-                <select class="form-control" id="operation" required>
+                <select class="form-control" id="operation" name="operation" name="operation" required>
                     <option value="CDM">Cullinan Diamond Mine</option>
                     <option value="FDM">Finsch Diamond Mine</option>
                     <option value="KDM">Koffiefontein Diamond Mine</option>
@@ -47,19 +47,19 @@
             <div class="form-group m-2">
                 <label class="m-0" for="Offminepotablewaterconsumption">Off mine potable water consumption</label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Offminepotablewaterconsumption" name="" placeholder="">
+                    id="Offminepotablewaterconsumption" name="Offminepotablewaterconsumption" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Onminepotablewaterconsumption">On mine potable water consumption
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Onminepotablewaterconsumption" name="" placeholder="">
+                    id="Onminepotablewaterconsumption" name="Onminepotablewaterconsumption" placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="Rawwater">Raw water
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Rawwater" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Rawwater" name="Rawwater"
                     placeholder="">
             </div>
 
@@ -67,14 +67,14 @@
                 <label class="m-0" for="Consumptivewaterintake">Consumptive water intake
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Consumptivewaterintake"
-                    name="" placeholder="">
+                    name="Consumptivewaterintake" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Re_used_recycledwater">Re-used / recycled water
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Re_used_recycledwater"
-                    name="" placeholder="">
+                    name="Re_used_recycledwater" placeholder="">
             </div>
 
             <div class="form-group m-2">
@@ -82,7 +82,8 @@
                     circuit
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Undergrounddewateringusedinminingcircuit" name="" placeholder="">
+                    id="Undergrounddewateringusedinminingcircuit" name="Undergrounddewateringusedinminingcircuit"
+                    placeholder="">
             </div>
 
             <div class="form-group m-2">
@@ -90,13 +91,14 @@
                     released (not used in mining circuit)
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Undergrounddewateringreleased_notusedinminingcircuit" name="" placeholder="">
+                    id="Undergrounddewateringreleased_notusedinminingcircuit"
+                    name="Undergrounddewateringreleased_notusedinminingcircuit" placeholder="">
             </div>
 
             <div class="form-group m-2">
                 <label class="m-0" for="Rainfall">Rainfall
                 </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Rainfall" name=""
+                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Rainfall" name="Rainfall"
                     placeholder="">
             </div>
 
@@ -105,7 +107,8 @@
                     on mine in m3/ tonne treated FY 2019 -1%
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalue_Totalwateruseonmineinm3_tonnetreatedFY2019" name="" placeholder="">
+                    id="KPIvalue_Totalwateruseonmineinm3_tonnetreatedFY2019"
+                    name="KPIvalue_Totalwateruseonmineinm3_tonnetreatedFY2019" placeholder="">
             </div>
 
             <div class="form-group m-2">
@@ -113,14 +116,16 @@
                     consumption ≥ 1 %
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalue_PercentagerecycledwaterFY2019" name="" placeholder="">
+                    id="KPIvalue_PercentagerecycledwaterFY2019" name="KPIvalue_PercentagerecycledwaterFY2019"
+                    placeholder="">
             </div>
             <div class="form-group m-2">
                 <label class="m-0" for="KPIvalue_PercentagerecycledwaterFY2019">KPI value:Percentage recycled water FY
                     2019 +1%
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalue_PercentagerecycledwaterFY2019" name="" placeholder="">
+                    id="KPIvalue_PercentagerecycledwaterFY2019" name="KPIvalue_PercentagerecycledwaterFY2019"
+                    placeholder="">
             </div>
 
             <div class="form-group m-2">
@@ -128,12 +133,13 @@
                     total percentage of water recycled ≥ 1%
                 </label>
                 <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="Improvementstrategyontotalpercentageofwaterrecycled" name="" placeholder="">
+                    id="Improvementstrategyontotalpercentageofwaterrecycled"
+                    name="Improvementstrategyontotalpercentageofwaterrecycled" placeholder="">
             </div>
             <div class="form-group m-2">
                 <div class="mb-3">
                     <label for="formFile" class="form-label">Attachment</label>
-                    <input class="form-control" type="file" id="formFile" name="">
+                    <input class="form-control" type="file" id="formFile" name="formFile">
                 </div>
             </div>
             <br>
