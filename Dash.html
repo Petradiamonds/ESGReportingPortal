@@ -22,124 +22,254 @@
 
 <body class="bg-primary">
     <!-- Page Start -->
-    <div class="pt-5 container bg-white rounded">
+    <div class="pt-5 pb-2 container bg-white rounded">
         <nav class="navbar navbar-dark bg-dark rounded">
             <a class="navbar-brand" href="index.php">
                 <img src="img/icon.png" width="30" height="30" class="d-inline-block align-top bg-white rounded" alt="">
-                Energy Inputs
+                ESG Dashboard
             </a>
         </nav>
-        <hr>
-        <form>
-            <div class="form-group m-2">
-                <label class="m-0" for="Date">Date</label>
-                <input type="date" class="form-control" id="inputdate" placeholder="Date" required>
-            </div>
-            <div class="form-group m-2">
-                <label class="m-0" for="operation">Operation</label>
-                <select class="form-control" id="operation" name="operation" required>
-                    <option value="CDM">Cullinan Diamond Mine</option>
-                    <option value="FDM">Finsch Diamond Mine</option>
-                    <option value="KDM">Koffiefontein Diamond Mine</option>
-                    <option value="WDL">Williamson Diamond Mine</option>
+
+        <div class="text-center">
+            <h2 class="m-3 p-1 bg-success rounded">
+                <label for="date">Date: </label>
+                <select class="pr-2" name="date" id="date">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
                 </select>
-            </div>
-            <div class="form-group m-2">
-                <label class="m-0" for="DieselVehicles">Diesel Vehicles</label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="DieselVehicles"
-                    name="DieselVehicles" placeholder="">
-            </div>
 
-            <div class="form-group m-2">
-                <label class="m-0" for="KPIvalueDieselforvehiclesTMMpertontreatedFY2019">KPI value:Diesel for vehicles
-                    (TMM) per ton treated FY 2019 -1%
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalueDieselforvehiclesTMMpertontreatedFY2019"
-                    name="KPIvalueDieselforvehiclesTMMpertontreatedFY2019" placeholder="">
-            </div>
-            <div class="form-group m-2">
-                <label class="m-0"
-                    for="IMPROVEMENTSTRATEGYimprovementreductionindieseluseforTracklessMobileMachinesmeasuredinlt">IMPROVEMENT
-                    STRATEGY : 1% mprovement (reduction) in diesel use for Trackless Mobile Machines measured in l/t
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="IMPROVEMENTSTRATEGYimprovementreductionindieseluseforTracklessMobileMachinesmeasuredinlt"
-                    name="IMPROVEMENTSTRATEGYimprovementreductionindieseluseforTracklessMobileMachinesmeasuredinlt"
-                    placeholder="">
-            </div>
+                <label for="month">Month: </label>
+                <select name="month" id="month">
+                    <option value="ALL">ALL</option>
+                    <option value="JAN">JAN</option>
+                    <option value="FEB">FEB</option>
+                    <option value="MAR">MAR</option>
+                    <option value="APR">APR</option>
+                    <option value="MAY">MAY</option>
+                    <option value="JUN">JUN</option>
+                    <option value="JUL">JUL</option>
+                    <option value="AUG">AUG</option>
+                    <option value="SEP">SEP</option>
+                    <option value="OCT">OCT</option>
+                    <option value="NOV">NOV</option>
+                    <option value="DEC">DEC</option>
+                </select>
+            </h2>
 
-            <div class="form-group m-2">
-                <label class="m-0" for="Dieselelectricitygeneration">Diesel electricity generation
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    name="Dieselelectricitygeneration" id="Dieselelectricitygeneration" placeholder="">
-            </div>
+        </div>
 
-            <div class="form-group m-2">
-                <label class="m-0" for="Electricitygenerated">Electricity generated
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Electricitygenerated"
-                    name="Electricitygenerated" placeholder="">
-            </div>
-
-            <div class="form-group m-2">
-                <label class="m-0" for="Electricitypurchased">Electricity purchased
-                    circuit
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Electricitypurchased"
-                    name="Electricitypurchased" placeholder="">
-            </div>
-            <div class="form-group m-2">
-                <label class="m-0" for="Petrol">Petrol
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="Petrol" name="Petrol"
-                    placeholder="">
-            </div>
-
-            <div class="form-group m-2">
-                <label class="m-0" for="LPG">LPG
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control" id="LPG" name="LPG"
-                    placeholder="">
-            </div>
-
-            <div class="form-group m-2">
-                <label class="m-0" for="KPIvalueElectricityusepertonnetreatedFY2019">KPI value: Electricity use per
-                    tonne treated FY 2019 - 1%
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="KPIvalueElectricityusepertonnetreatedFY2019" name="KPIvalueElectricityusepertonnetreatedFY2019"
-                    placeholder="">
-            </div>
-            <div class="form-group m-2">
-                <label class="m-0"
-                    for="IMPROVEMENTSTRATEGYYearonyearreductionintotalelectrcityusepertontreated">IMPROVEMENT STRATEGY:
-                    Year on year reduction in total electricity use per ton treated
-                </label>
-                <input type="number" min="0" step=".01" value="0.00" class="form-control"
-                    id="IMPROVEMENTSTRATEGYYearonyearreductionintotalelectrcityusepertontreated"
-                    name="IMPROVEMENTSTRATEGYYearonyearreductionintotalelectrcityusepertontreated" placeholder="">
-            </div>
-            <div class="form-group m-2">
-                <div class="mb-3">
-                    <label for="formFile" class="form-label">Attachment</label>
-                    <input class="form-control" type="file" name="formFile" id="formFile">
+        <!-- Start section -->
+        <section>
+            <hr>
+            <h3 class="mx-5 p-1 bg-info rounded">Annual GHG Emissions 2020 - All</h3>
+            <h5>Total GHG Emission Contribution by Organisation</h5>
+            <div class="row">
+                <!-- Some Report 1 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            GHG Emissions by Organisation (tCO2e)
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/4.jpg" alt="tmp">
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <br>
-            <div class="row my-3">
-                <div class="col-6">
-                    <button class="btn btn-outline-danger btn-lg w-100"
-                        onclick="document.location.href='index.html'">Cancel</button>
+
+                <!-- Some Report 2 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            GHG Emissions (tCO2e/Ct.)
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/2.jpg" alt="tmp">
+                        </div>
+                    </div>
                 </div>
-                <div class="col-6">
-                    <button class="btn btn-outline-success btn-lg w-100" name="Save">Save</button>
+
+                <!-- Some Report 4 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            GHG Inventory Boundaries by Scope
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/3.jpg" alt="tmp">
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Some Report 5 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Organisational Boundaries
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/1.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 6 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            GHG Emissions Petra Diamonds Limited <br> FY 2018 - FY 2020
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/5.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 7 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Scope Definitions
+                        </div>
+                        <div class="card-body">
+                            <div>
+                                <h6 class="light">Scope 3 GHG emissions</h6>
+                                <small> are direct emissions from sources that are owned or controlled by the reporting
+                                    company (GHG Protocol).</small>
+                            </div>
+                            <div>
+                                <h6 class="light">Scope 2 GHG emissions</h6>
+                                <small> are the emissions associated with the generation of electricity, heating/
+                                    cooling, or
+                                    steam purchased for own
+                                    consumption.</small>
+                            </div>
+                            <div>
+                                <h6 class="light">Scope 3 GHG emissions</h6>
+                                <small> are “other indirect emissions that are a consequence of the reporting company,
+                                    but occur
+                                    at sources owned or controlled
+                                    by another company” (GHG Protocol).</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
-        </form>
-        <br><br>
-        <br><br>
+        </section>
+        <!-- end section -->
+
+        <!-- Start section -->
+        <section>
+            <hr>
+            <h3 class="mx-5 p-1 bg-info rounded">Group Integrated Annual Env Report - FY 2020</h3>
+            <h5>ENVIRONMENTAL COMPLIANCE, ASSURANCE, PERFORMANCE - FY 2020</h5>
+            <div class="row">
+
+                <!-- Some Report 1 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 1: ISO 14001:2015 audit findings per organization
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/6.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 2 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 2: Total Number of incidents reported per organisation for this period
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/7.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 3 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 3: CDM Number of monitoring sites indicating non-conformances to monitoring standards
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/8.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 4 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 4: FDM Number of monitoring sites indicating non-conformances to monitoring standards
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/9.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 5 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 5: KDM Number of monitoring sites indicating non-conformances to monitoring standards
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/10.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 6 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 6: Rehabilitation as a percentage of Total Mining Area
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/11.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 7 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 7: Water Consumption, Raw Water Intake and Percentage Water Recycled
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/12.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Some Report 8 -->
+                <div class="pt-2 col-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Graph 8: Electricity Consumption (kWh/t) Comparison FY 2018 - FY2020
+                        </div>
+                        <div class="card-body">
+                            <img class="img-fluid" src="img/tmp/13.jpg" alt="tmp">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- end section -->
+
     </div>
     <!-- Page End -->
 
